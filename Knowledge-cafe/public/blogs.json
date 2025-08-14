@@ -1,10 +1,10 @@
 [
   {
     "id": 1,
-    "cover_image": "./images/1.jpg",
+    "cover_image": "https://picsum.photos/id/101/800/400",
     "title": "Exploring the Hidden Beaches",
     "author_name": "Sadia Rahman",
-    "author_img": "https://i.pravatar.cc/150?img=1",
+    "author_img": "./images/boy1.png",
     "date_of_publish": "2025-02-10",
     "read_time": "5 min read",
     "hashtags": ["#Travel", "#BeachVibes"]
@@ -14,7 +14,7 @@
     "cover_image": "https://picsum.photos/id/102/800/400",
     "title": "Mastering JavaScript in 30 Days",
     "author_name": "Tanvir Ahmed",
-    "author_img": "https://i.pravatar.cc/150?img=2",
+    "author_img": "./images/boy2.png",
     "date_of_publish": "2025-01-25",
     "read_time": "8 min read",
     "hashtags": ["#JavaScript", "#WebDev"]
@@ -24,7 +24,7 @@
     "cover_image": "https://picsum.photos/id/103/800/400",
     "title": "Healthy Breakfast Recipes",
     "author_name": "Nusrat Jahan",
-    "author_img": "https://i.pravatar.cc/150?img=3",
+    "author_img": "./images/girl1.jpg",
     "date_of_publish": "2025-02-15",
     "read_time": "6 min read",
     "hashtags": ["#HealthyFood", "#Recipes"]
@@ -34,7 +34,7 @@
     "cover_image": "https://picsum.photos/id/104/800/400",
     "title": "The Rise of AI in Everyday Life",
     "author_name": "Shakil Hossain",
-    "author_img": "https://i.pravatar.cc/150?img=4",
+    "author_img": "./images/girl2.jpg",
     "date_of_publish": "2025-01-30",
     "read_time": "10 min read",
     "hashtags": ["#AI", "#Tech"]
