@@ -8,7 +8,8 @@ import Bookmarks from './components/Bookmarks/Bookmarks'
 function App() {
 
   const [bookmarks, setBookmarks] = useState([]);
-  const [readingTime, setReadingTime] = useState([]);
+  const [readingTime, setReadingTime] = useState(0);
+ 
 
   const handleBookMark = blog => {
     // console.log('book mark adding soon')
@@ -17,9 +18,10 @@ function App() {
     setBookmarks(newBookmarks);
   }
 
-  const handleMarkedRead = time => {
-    console.log('reading time', time);
-  }
+const handleMarkRead = time => {
+  const newReadingTime = readingTime + time;
+  setReadingTime(newReadingTime);
+}
 
   return (
     <>
@@ -27,8 +29,8 @@ function App() {
       {/* <h1 className='text-6xl bg-red-300'>Knowledge Cafe</h1> */}
       <Header></Header>
       <div className='md:flex pt-16 max-w-7xl mx-auto'>
-        <Blogs handleMarkedRead={handleMarkedRead} handleBookMark={handleBookMark}></Blogs>
-        <Bookmarks bookmarks={bookmarks}></Bookmarks>
+        <Blogs handleMarkRead={handleMarkRead}  handleBookMark={handleBookMark}></Blogs>
+        <Bookmarks readingTime={readingTime}   bookmarks={bookmarks}></Bookmarks>
       </div>
      
     </>
